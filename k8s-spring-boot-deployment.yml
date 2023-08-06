@@ -15,7 +15,6 @@ spec:
       containers:
         - name: springboot
           image: jakinkorea/jhooq-docker-demo:jhooq-docker-demo
-          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           env:
