@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: jhooq-springboot
 spec:
+  revisionHistoryLimit: 1 # Default to 10 if not specified
   replicas: 3
   selector:
     matchLabels:
@@ -12,7 +13,6 @@ spec:
       labels:
         app: jhooq-springboot
     spec:
-      revisionHistoryLimit: 1 # Default to 10 if not specified
       containers:
         - name: springboot
           image: jakinkorea/jhooq-docker-demo:latest
