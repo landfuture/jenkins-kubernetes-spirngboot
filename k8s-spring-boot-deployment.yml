@@ -12,6 +12,7 @@ spec:
       labels:
         app: jhooq-springboot
     spec:
+      revisionHistoryLimit: 1 # Default to 10 if not specified
       containers:
         - name: springboot
           image: jakinkorea/jhooq-docker-demo:latest
