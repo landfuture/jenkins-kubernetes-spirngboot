@@ -10,7 +10,15 @@ public class JhooqDockerDemoController {
     public String hello() {
 
 
-        return "Docker Demo - Hello Jhooq -cjsss --- 13 \n";
+        return "Docker Demo - Hello Jhooq - hello - cjsss --- 13 \n";
+
+    }
+
+    @GetMapping("/cjsss")
+    public String cjsss() {
+
+
+        return "Docker Demo - Hello Jhooq - cjsss --- 14 \n";
 
     }
 }
